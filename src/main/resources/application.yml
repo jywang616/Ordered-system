@@ -1,0 +1,28 @@
+#端口号
+server:
+  port: 80
+  #应用名称（可选）
+spring:
+  application:
+    name: order_system
+  datasource:
+    druid:
+      #aaaaaaaaaaaaaaaaaaaaaaaaaa你这里为什么一直在报错啊啊啊啊啊啊🤯
+      #wocccc球球你连上吧
+      #不会吧不会吧不是熬夜熬傻了几位数密码记错了吗啊啊啊啊啊啊啊啊啊啊啊
+      #！！！！！！！！！！！原来要加双引号 拴q
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: "030616"  #这对双引号害人不浅。。。
+mybatis-plus:
+  configuration:
+    #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+
+ordered_prog:
+  path: D:\dishes\
